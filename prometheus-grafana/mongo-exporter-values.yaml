@@ -1,0 +1,18 @@
+
+
+# [mongodb[+srv]://][user:pass@]host1[:port1][,host2[:port2],...][/database][?options]
+mongodb:
+  uri: "mongodb://mongodb-service:27017"
+
+
+
+serviceMonitor:
+  enabled: true
+  interval: 30s
+  scrapeTimeout: 10s
+  additionalLabels: 
+    release: monitoring
+  targetLabels: []
+  metricRelabelings: []
+
+
